@@ -1,0 +1,8 @@
+/**
+ * Cách sử dụng Array và Object khác nhau như thế nào. Viết câu trả lời ở phía dưới.
+ */
+
+// Array là mảng được dùng để lưu trữ cái giá trị bao gồm index và variable, các element phải cùng kiểu dữ liệu.
+// Object được sử dụng để lưu các thông tin đối tượng đang được đề cập tới.
+
+// Hai điêuù này khác nhau vì Object lưu trữ chi tiết đối tượng còn Array lưu trữ các đối tượng.

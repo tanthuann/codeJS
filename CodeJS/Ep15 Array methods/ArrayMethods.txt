@@ -1,0 +1,126 @@
+/**
+ * Đọc và dịch các method đã học từ MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+ * Lấy ví dụ cho các trường hợp input khác nhau của mỗi method
+ * Mục đích của bài tập này: Giúp bạn học cách tự tra cứu, đọc tài liệu.
+ * Đây là một kĩ năng không thể thiếu của 1 developer.
+ */
+
+
+/** 
+ * Array.from(arrayLike, mapFn, thisArg)
+ *  -arrrayLike : truyền parameter gần giống mảng.
+ *  -mapFN      : ánh xạ cac element của mảng.
+ *  -thisArg    : các giá trị gì đó không hiểu lắm :)))
+ */
+// a = 'z01nn'
+// console.log(Array.from(a,i => i + 2 ));
+// b = [1,2,3,4,5];
+// console.log(Array.from(b,i => i+1));
+//Array.from({length: 5}, (v, i) => i);
+
+/**
+ * Array.isArray(someThing)
+ * Nếu someThing là mảng thì trả về true và
+ * ngược lại.
+ */
+//Array.isArray([1,2,3]); //true
+
+/**
+ * Array.of[ele1,ele2,ele3,...]
+ * Dùng để tạo ra 1 array mới, bất kể số lượng.
+ * 
+ */
+//Array.of(1,2,3); //[1,2,3]
+
+/**
+ * Array.prototype.concat(value1,value2,...);
+ * Dùng để nối mảng Array.prototype với các value
+ */
+// var a = [1,2,3];
+// var b = [4,5,6];
+// var c = a.concat(b);
+// console.log(c);
+
+
+/**
+ * Array.prototype.copyWithin(targer,start,end)
+ *  -targer : paste bắt đầu từ phần index này
+ *  -start : copy bắt đầu từ phần index này
+ *  -end : tới end
+ */
+// var array1 = ['a', 'b', 'c', 'd', 'e'];
+// console.log(array1.copyWithin(0,2,3));
+//expect: array1 = ['c','b','c','d','e']
+
+/**
+ * Array.prototype.entries()
+ * Dùng để tạo ra các mảng có chứa [index,element];
+ */
+// var a = ['a','b','c'];
+// var b = a.entries();
+// console.log(b.next().value);
+// console.log(b.next().value);
+
+/**
+ * Array.prototype.slice(begin,end)
+ * dùng để gọi ra các element có index from begin to end-1.
+ */
+// arr = [1,2,3,4,5,6,7,8];
+// arr.slice(1,5);
+
+/**
+ * Array.prototype.splice(begin,delCount,item1,item2,...)
+ *  -begin : index cần thay.
+ *  -delCount : xoá bao nhieu element ở index đó.
+ *  -item1: các item replace ở begin.
+ * 
+ */
+// var numbers = [1,2,3,4,5,6];
+// numbers.splice(2,1,'aaaa');
+// console.log(numbers);
+
+/**
+ * Array.prototype.map(function);
+ * function : laf 1 transform function trả về mảng các ele thoả yêua cầu đề.
+ * Có thể viết tắt là ele => yêu cầu (return yêu cầu)
+ */
+// arr = [1,2,3,4,5,6,7,8];
+// arr.map(x => x*2);
+// arr.map(function(x) {
+//   return x*2;
+// });
+
+/**
+ * Array.prototype.filter(function);
+ * function : lọc các ele trong arr theo yêu cầu trả về mảng các ele thoẻ yêu cầu.
+ */
+// arr = [1,2,3,4,5,6,7,8];
+// arr.filter(x => x % 2 == 1);
+
+/**
+ * Array.prototype.find(function);
+ * function : lọc các ele trong mảng, trả về 1 value đầu tiên thoả yêu cầu.
+ */
+// arr = [1,2,3,4,5,6,7,8];
+// arr.find(function(ele) {
+//   return ele > 5;
+// });
+
+/**
+ * Array.prototype.reduce(function(a,b),beginValue);
+ * 
+ * function(a,b) : a,b là tượng trung cho 2 ele đầu tiên của Array.prototype nếu không có beginValue.
+ * Nếu có beginValue thì a = beginValue, b = ele đầu tiên của Array.prototype .
+ */
+// arr = [1,2,3,4,5,6,7,8];
+// arr.reduce((a,b) => a+b,10000000000) //36 là đáp án
+
+/**
+ * Array.prototype.john('someThing')
+ * dung để gộp các phần tử trong mảng lại được ngăn cách bơi someThing.
+ */
+// arr = [1,2,3,4,5,6,7,8];
+// console.log(arr.join(''));
+
+//còn update
+
